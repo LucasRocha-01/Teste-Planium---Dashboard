@@ -23,11 +23,14 @@ export const Title = styled("h2")`
 `;
 
 export const Menu = styled("nav")`
+  display: flex;
+  flex-direction: row;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 20px;
+  gap: 200px;
 `;
 
 export const Lista = styled("ul")`
@@ -68,4 +71,37 @@ export const ItemLista = styled("li")`
 export const Options = styled("div")`
   display: flex;
   gap: 16px;
+`;
+
+export const Search = styled("input")`
+  border: 0;
+  background-color: initial;
+`;
+
+export const SearchDiv = styled("div")`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  &:hover {
+    input {
+      color: #2563eb;
+      border-bottom: 1px solid #2563eb;
+    }
+
+    path {
+      fill: #2563eb;
+    }
+  }
+`;
+
+export const Avatar = styled("div")`
+  display: flex;
+  gap: 20px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
 `;

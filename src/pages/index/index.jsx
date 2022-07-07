@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import MenuLateral from "../ui/components/menuLateral";
-import MenuNav from "../ui/components/menuNav";
-import styles from "../ui/styles/Home.module.css";
+import Card from "@mui/material/Card";
+import BasicCard from "../../ui/components/Cards";
+import MenuLateral from "../../ui/components/menuLateral";
+import MenuNav from "../../ui/components/menuNav";
+import styles from "../../ui/styles/Home.module.css";
+import { Coluna, Container, Linha } from "./style";
 
 export default function Home() {
   return (
@@ -14,6 +17,44 @@ export default function Home() {
       <MenuNav />
       <main className={styles.main}>
         <MenuLateral />
+
+        <Container>
+          <Linha>
+            <Coluna>
+              <Card sx={{ minHeight: 267, width: 546, bgcolor: "#22C55E" }}>
+                Teste
+              </Card>
+              <Card sx={{ minHeight: 267, width: 546 }}>Teste</Card>
+            </Coluna>
+            <Coluna>
+              <Card sx={{ minHeight: 267, width: 264, bgcolor: "#2563EB" }}>
+                Teste
+              </Card>
+              <Card sx={{ minHeight: 267, width: 264, bgcolor: "#9333EA" }}>
+                Teste
+              </Card>
+            </Coluna>
+            <Coluna>
+              <Card sx={{ height: 168, width: 264, bgcolor: "#BFEBFF" }}>
+                Teste
+              </Card>
+              <Card sx={{ height: 168, width: 264, bgcolor: "#F3E8FF" }}>
+                Teste
+              </Card>
+              <Card sx={{ height: 168, width: 264, bgcolor: "#DCFCE7" }}>
+                Teste
+              </Card>
+            </Coluna>
+          </Linha>
+          <Linha>
+            <Coluna>
+              <Card sx={{ minHeight: 466, width: 360 }}>Teste</Card>
+            </Coluna>
+            <Coluna>
+              <Card sx={{ height: 466, width: 743 }}>Teste</Card>
+            </Coluna>
+          </Linha>
+        </Container>
 
         {/* 
         <h1 className={styles.title}>
@@ -55,18 +96,7 @@ export default function Home() {
           </a>
         </div> */}
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   );
 }

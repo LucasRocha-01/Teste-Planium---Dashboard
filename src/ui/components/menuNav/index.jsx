@@ -1,8 +1,21 @@
 import React from "react";
-import { Container, ItemLista, Lista, Menu, Options, Title } from "./style";
+import {
+  Avatar,
+  Container,
+  ItemLista,
+  Lista,
+  Menu,
+  Options,
+  Search,
+  SearchDiv,
+  Title,
+} from "./style";
+
+import TextField from "@mui/material/TextField";
 
 import ImgLogout from "../../../assets/logout.svg";
 import ImgOption from "../../../assets/option.svg";
+import ImgSearch from "../../../assets/Search.svg";
 import BadgeAvatars from "../Avatar";
 
 export default function MenuNav() {
@@ -17,8 +30,20 @@ export default function MenuNav() {
           <ItemLista>Notifications</ItemLista>
           <ItemLista>Settings</ItemLista>
         </Lista>
+
+        <SearchDiv>
+          <ImgSearch />
+          <Search placeholder={"Search Content ..."} />
+        </SearchDiv>
       </Menu>
-      <BadgeAvatars />
+
+      <Avatar>
+        <BadgeAvatars />
+        <div>
+          <strong>Jackson D.</strong>
+          <span>Mananger</span>
+        </div>
+      </Avatar>
 
       <Options>
         <Lista>

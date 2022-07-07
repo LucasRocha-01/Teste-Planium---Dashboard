@@ -6,7 +6,7 @@ export const MenuContainer = styled("div")`
   font-family: "Inter";
   justify-content: center;
   background-color: #f7f8fa;
-  height: 100vh;
+  height: 100%;
   /* position: relative; */
   /* top: 0px; */
   /* left: 0px; */
