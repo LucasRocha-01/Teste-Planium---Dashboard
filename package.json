@@ -12,9 +12,12 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.8.7",
+    "canvasjs": "^1.8.3",
+    "chart.js": "^3.8.0",
     "next": "12.2.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "recharts": "^2.1.12"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",

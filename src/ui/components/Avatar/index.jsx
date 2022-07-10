@@ -6,16 +6,16 @@ import { RadioAvatar, StyledBadge } from "./style";
 
 export default function BadgeAvatars() {
   return (
-    <RadioAvatar>
-      <Stack direction="row">
-        <StyledBadge
-          overlap="circular"
-          anchorOrigin={{ vertical: "top", horizontal: "right" }}
-          variant="dot"
-        >
+    <Stack direction="row">
+      <StyledBadge
+        overlap="circular"
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        variant="dot"
+      >
+        <RadioAvatar>
           <Avatar alt="Lemy Sharp" src="assets/Base.jpg" />
-        </StyledBadge>
-      </Stack>
-    </RadioAvatar>
+        </RadioAvatar>
+      </StyledBadge>
+    </Stack>
   );
 }
