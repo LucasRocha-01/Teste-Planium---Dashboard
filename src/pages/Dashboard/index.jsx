@@ -9,10 +9,14 @@ import {
   LineChartRoxo,
 } from "../../ui/components/charts/LineChart";
 import { BarsChart } from "../../ui/components/charts/BarChart";
-import PieSchart from "../../ui/components/charts/PieChart";
 import ListaApps from "../../ui/components/ListaApps";
 import BarChartCost from "../../ui/components/charts/BarChartCost";
 import { BarsChart2c } from "../../ui/components/charts/BarChart2c";
+import dynamic from "next/dynamic";
+
+const PieSchart = dynamic(import("../../ui/components/charts/PieChart"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
